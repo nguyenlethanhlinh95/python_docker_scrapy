@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+    python:
+        container_name: python_docker_linh
+        tty: true
+        build: .
+        volumes:
+            - ./:/app
+        ports:
+            - 8011:8011
